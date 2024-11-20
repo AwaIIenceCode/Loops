@@ -5,17 +5,15 @@ using namespace std;
 int main()
 {
     int user_number;
-    int result = 1;
-    cout << "Enter the start range -> " << endl;
-    cout << "Number must be >= 1" << endl;
+    int i = 1;
+
+    cout << "Enter the number -> ";
     cin >> user_number;
 
-    for (user_number; user_number <= 20; user_number++)
+    for (user_number; i <= 9; i++)
     {
-        result *= user_number;
+        cout << user_number << " * " << i << " = " << user_number * i << endl;
     }
-
-    cout << "Dobutok= " << result;
 
     return 0;
 }
