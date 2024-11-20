@@ -4,18 +4,18 @@ using namespace std;
 
 int main()
 {
-    int count = 0;
-    int sum_number = 0;
+    int user_number;
+    int result = 1;
+    cout << "Enter the start range -> " << endl;
+    cout << "Number must be >= 1" << endl;
+    cin >> user_number;
 
-    for (int i = 1; i <= 1000; i++)
+    for (user_number; user_number <= 20; user_number++)
     {
-        sum_number += i;
-        count ++;
+        result *= user_number;
     }
 
-    int result = sum_number / count;
-
-    cout << result;
+    cout << "Dobutok= " << result;
 
     return 0;
 }
