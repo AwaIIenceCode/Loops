@@ -5,15 +5,38 @@ using namespace std;
 
 int main()
 {
-    int user_number;
+    int start, finish;
 
-    cout << "Enter the number ->";
-    cin >> user_number;
+    cout << "Enter the start range -> ";
+    cin >> start;
+    cout << "Enter the finish range -> ";
+    cin >> finish;
 
-    for (int i = 0; i <= user_number; i++)
+    if (start > finish)
     {
-        cout << i << endl;
+        int temp = start;
+        start = finish;
+        finish = temp;
     }
-    _getch();
+    cout << endl;
+
+    for (start; start <= finish; start++)
+    {
+        if (start % 2 == 0)
+        {
+            cout << "Number " << start << " event" << endl;
+        }
+
+        else if (start % 2 != 0)
+        {
+            cout << "Number " << start << " odd" << endl;
+        }
+
+        if (start % 7 == 0)
+        {
+            cout << "Number " << start << " multiple of 7" << endl;
+        }
+    }
+
     return 0;
 }
