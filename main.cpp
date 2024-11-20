@@ -4,21 +4,18 @@ using namespace std;
 
 int main()
 {
-    int start, finish;
-    int sum_number;
+    int user_num;
+    int sum_number = 0;
 
-    cout << "Enter the start range ->";
-    cin >> start;
-
-    cout << "Enter the finish range -> ";
-    cin >> finish;
-
-    for (start; start <= finish; start++)
+    do
     {
-        sum_number += start;
-    }
+        cout << "Enter the number -> ";
+        cin >> user_num;
 
-    cout << sum_number << endl;
+        sum_number += user_num;
+    } while (user_num != 0);
+
+    cout << sum_number;
 
     return 0;
 }
