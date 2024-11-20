@@ -4,20 +4,18 @@ using namespace std;
 
 int main()
 {
-    int x, y;
-    int result = 1;
+    int count = 0;
+    int sum_number = 0;
 
-    cout << "Enter the \"X\"";
-    cin >> x;
-
-    cout << "Enter the \"Y\"";
-    cin >> y;
-
-    for (int i = 0; i < y; i++)
+    for (int i = 1; i <= 1000; i++)
     {
-        result *= x;
+        sum_number += i;
+        count ++;
     }
 
+    int result = sum_number / count;
+
     cout << result;
+
     return 0;
 }
