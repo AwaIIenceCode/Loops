@@ -1,23 +1,23 @@
-//Напишіть програму, яка обчислює суму цілих чисел від а до 500 (значення a вводиться з клавіатури).
-
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int user_number;
-    int sum_number = 0;
+    int x, y;
+    int result = 1;
 
-    cout << "Enter the start range ->";
-    cin >> user_number;
+    cout << "Enter the \"X\"";
+    cin >> x;
 
-    for (user_number; user_number <= 500; user_number++)
+    cout << "Enter the \"Y\"";
+    cin >> y;
+
+    for (int i = 0; i < y; i++)
     {
-        sum_number += user_number;
+        result *= x;
     }
 
-    cout << sum_number;
-
+    cout << result;
     return 0;
 }
