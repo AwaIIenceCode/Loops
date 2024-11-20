@@ -14,7 +14,6 @@ int main()
     {
         cout << i << endl;
     }
-
     _getch();
     return 0;
 }
