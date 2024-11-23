@@ -1,5 +1,3 @@
-//Напишіть програму, яка обчислює суму цілих чисел від а до 500 (значення a вводиться з клавіатури).
-
 #include <iostream>
 
 using namespace std;
@@ -12,9 +10,15 @@ int main()
     cout << "Enter the start range ->";
     cin >> user_number;
 
-    for (user_number; user_number <= 500; user_number++)
+    if (user_number > 500)
     {
-        sum_number += user_number;
+        cout << "The start number must be <= 500!" << endl;
+        return 1;
+    }
+
+    for (int i = user_number; i <= 500; i++)
+    {
+        sum_number += i;
     }
 
     cout << sum_number;
