@@ -10,6 +10,12 @@ int main()
     cout << "Enter the number ->";
     cin >> user_number;
 
+    if (user_number < 0)
+    {
+        cout << "The number must be non-negative!" << endl;
+        return 1;
+    }
+
     for (int i = 0; i <= user_number; i++)
     {
         cout << i << endl;
