@@ -13,11 +13,18 @@ int main()
     cout << "Enter the \"Y\"";
     cin >> y;
 
+    if (y < 0)
+    {
+        cout << "Negative exponents are not supported!" << endl;
+        return 1;
+    }
+
     for (int i = 0; i < y; i++)
     {
         result *= x;
     }
 
-    cout << result;
+    cout << "The result of " << x << "^" << y << " is: " << result << endl;
+
     return 0;
 }
