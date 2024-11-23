@@ -15,7 +15,7 @@ int main()
         sum_number += user_num;
     } while (user_num != 0);
 
-    cout << sum_number;
+    cout << "Current sum: " << sum_number << endl;
 
     return 0;
 }
