@@ -13,9 +13,9 @@ int main()
         count ++;
     }
 
-    int result = sum_number / count;
+    double result = static_cast<double>(sum_number)/ count;
 
-    cout << result;
+    cout << "Avarage: " << result << endl;
 
     return 0;
 }
