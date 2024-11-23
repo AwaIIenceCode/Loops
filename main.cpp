@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int start, finish;
-    int sum_number;
+    int sum_number = 0;
 
     cout << "Enter the start range ->";
     cin >> start;
