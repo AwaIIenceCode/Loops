@@ -13,9 +13,16 @@ int main()
     cout << "Enter the finish range -> ";
     cin >> finish;
 
-    for (start; start <= finish; start++)
+    if (start > finish)
     {
-        sum_number += start;
+        int temp = start;
+        start = finish;
+        finish = temp;
+    }
+
+    for (int i = start; i <= finish; i++)
+    {
+        sum_number += i;
     }
 
     cout << sum_number << endl;
